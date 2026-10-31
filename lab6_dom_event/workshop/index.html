@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project: Form Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mini Project: Form Pendaftaran Workshop</h1>
+        <p>Nama: Angger Cakra Wicaksono | NIM: 312510054 | Kelas: I253A</p>
+    </header>
+
+    <nav>
+        <a href="../../index.html">Halaman Utama</a> |
+        <a href="../index.html">Latihan 1-6</a> |
+        <a href="index.html">Mini Project</a> |
+        <a href="../eksperimen/index.html">Eksperimen Mandiri</a>
+    </nav>
+
+    <div class="info-workshop">
+        <strong>Workshop Pemrograman Web Dasar</strong><br>
+        Tempat: Lab Komputer Gedung B, Universitas Pelita Bangsa<br>
+        Kuota terbatas, silakan isi data di bawah ini dengan benar.
+    </div>
+
+    <div class="kolom">
+
+        <form id="formWorkshop" class="form-box" novalidate>
+            <label for="nama">Nama lengkap</label>
+            <input id="nama" name="nama" type="text" maxlength="50">
+            <small id="errorNama" class="error"></small>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+            <small id="errorEmail" class="error"></small>
+
+            <label for="sesi">Pilihan sesi</label>
+            <select id="sesi" name="sesi">
+                <option value="">-- Pilih sesi --</option>
+                <option value="Sesi 1 - Sabtu, 08.00-10.00 (HTML &amp; CSS)">Sesi 1 - Sabtu, 08.00-10.00 (HTML &amp; CSS)</option>
+                <option value="Sesi 2 - Sabtu, 13.00-15.00 (JavaScript DOM)">Sesi 2 - Sabtu, 13.00-15.00 (JavaScript DOM)</option>
+                <option value="Sesi 3 - Minggu, 09.00-11.00 (PHP Dasar)">Sesi 3 - Minggu, 09.00-11.00 (PHP Dasar)</option>
+            </select>
+            <small id="errorSesi" class="error"></small>
+
+            <label for="catatan">Catatan / harapan (opsional)</label>
+            <textarea id="catatan" name="catatan" rows="3" maxlength="150"></textarea>
+            <small>Karakter: <span id="jumlahCatatan">0</span>/150</small>
+
+            <div class="tombol">
+                <button type="submit">Daftar</button>
+                <button type="button" id="tombolReset" class="btn-reset">Hapus Input</button>
+            </div>
+
+            <p id="pesanForm" aria-live="polite"></p>
+        </form>
+
+        <div class="ringkasan">
+            <h3>Ringkasan Pendaftaran</h3>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>: <span id="ringkasNama">-</span></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>: <span id="ringkasEmail">-</span></td>
+                </tr>
+                <tr>
+                    <td>Sesi</td>
+                    <td>: <span id="ringkasSesi">-</span></td>
+                </tr>
+                <tr>
+                    <td>Catatan</td>
+                    <td>: <span id="ringkasCatatan">-</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Praktikum Pemrograman Web - Universitas Pelita Bangsa</p>
+    </footer>
+
+</body>
+</html>

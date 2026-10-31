@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksperimen Mandiri - DOM dan Event</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="eksperimen.css">
+    <script src="eksperimen.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Eksperimen Mandiri</h1>
+        <p>Nama: Angger Cakra Wicaksono | NIM: 312510054 | Kelas: I253A</p>
+    </header>
+
+    <nav>
+        <a href="../../index.html">Halaman Utama</a> |
+        <a href="../index.html">Latihan 1-6</a> |
+        <a href="../workshop/index.html">Mini Project</a> |
+        <a href="index.html">Eksperimen Mandiri</a>
+    </nav>
+
+    <!-- Eksperimen 1 -->
+    <section class="latihan">
+        <h2>1. To-do List dengan Tombol Hapus</h2>
+        <label for="inputTugas">Tugas baru</label>
+        <input id="inputTugas" type="text">
+        <button id="tambahTugas" type="button">Tambah</button>
+        <p id="pesanTugas" aria-live="polite"></p>
+        <ul id="daftarTugas"></ul>
+    </section>
+
+    <!-- Eksperimen 2 -->
+    <section class="latihan">
+        <h2>2. Validasi Nama Minimal 3 Karakter</h2>
+        <form id="formNama" novalidate>
+            <label for="nama">Nama lengkap</label>
+            <input id="nama" type="text">
+            <button type="submit">Cek</button>
+        </form>
+        <p id="pesanNama" aria-live="polite"></p>
+    </section>
+
+    <!-- Eksperimen 3 -->
+    <section class="latihan">
+        <h2>3. Event Change pada Dropdown Sesi</h2>
+        <label for="sesi">Sesi workshop</label>
+        <select id="sesi">
+            <option value="">-- Pilih sesi --</option>
+            <option value="Sesi 1 (Sabtu pagi)">Sesi 1 (Sabtu pagi)</option>
+            <option value="Sesi 2 (Sabtu siang)">Sesi 2 (Sabtu siang)</option>
+            <option value="Sesi 3 (Minggu pagi)">Sesi 3 (Minggu pagi)</option>
+        </select>
+        <p>Sesi yang dipilih: <strong id="sesiTerpilih">belum ada</strong></p>
+    </section>
+
+    <!-- Eksperimen 4 -->
+    <section class="latihan">
+        <h2>4. Sembunyikan / Tampilkan Paragraf</h2>
+        <button id="tombolToggle" type="button">Sembunyikan Paragraf</button>
+        <p id="paragrafInfo" class="kotak-info">
+            Paragraf ini disembunyikan dengan menambahkan class <code>tersembunyi</code>
+            menggunakan <code>classList.toggle()</code>, bukan dengan mengubah style langsung.
+        </p>
+    </section>
+
+    <!-- Eksperimen 5 -->
+    <section class="latihan">
+        <h2>5. Script Tanpa defer di Bagian head</h2>
+        <p>
+            Percobaan ini ada di halaman terpisah:
+            <a href="tanpa_defer.html">tanpa_defer.html</a>.
+            Buka halaman tersebut lalu lihat Console pada Developer Tools (F12).
+        </p>
+    </section>
+
+    <footer>
+        <p>Praktikum Pemrograman Web - Universitas Pelita Bangsa</p>
+    </footer>
+
+</body>
+</html>

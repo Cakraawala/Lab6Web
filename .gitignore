@@ -1,0 +1,5 @@
+# Ignore folder laporan dan file office temporary
+Laporan/
+*.docx
+*.pdf
+~$*

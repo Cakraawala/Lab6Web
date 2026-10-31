@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 0 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #1f5faa;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin: 15px 0;
+    padding: 8px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    color: #1f5faa;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.info-workshop {
+    background: #eef4fb;
+    border-left: 4px solid #1f5faa;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.kolom {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.form-box {
+    flex: 3;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.ringkasan {
+    flex: 2;
+    border: 1px solid #1f5faa;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.ringkasan h3 {
+    margin-top: 0;
+    color: #1f5faa;
+}
+
+.ringkasan table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ringkasan td {
+    padding: 4px;
+    vertical-align: top;
+    word-break: break-word;
+}
+
+.ringkasan td:first-child {
+    width: 70px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input.salah,
+select.salah {
+    border-color: #c0392b;
+    background: #fff5f5;
+}
+
+small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+}
+
+small.error {
+    color: #c0392b;
+}
+
+.tombol {
+    margin-top: 15px;
+}
+
+button {
+    padding: 7px 14px;
+    background: #1f5faa;
+    color: white;
+    border: 1px solid #1f5faa;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+button:hover {
+    background: #164785;
+}
+
+.btn-reset {
+    background: #666;
+    border-color: #666;
+}
+
+.btn-reset:hover {
+    background: #444;
+}
+
+.pesan-error {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.pesan-sukses {
+    color: #27833a;
+    font-weight: bold;
+    background: #eaf7ec;
+    border: 1px solid #b7dfbe;
+    padding: 8px 10px;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+/* tampilan layar kecil / hp */
+@media (max-width: 650px) {
+    .kolom {
+        flex-direction: column;
+    }
+
+    .form-box,
+    .ringkasan {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

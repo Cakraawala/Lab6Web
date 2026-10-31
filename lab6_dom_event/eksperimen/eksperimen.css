@@ -1,0 +1,31 @@
+.tombol-hapus {
+    background: #c0392b;
+    border-color: #c0392b;
+    margin-left: 4px;
+}
+
+.tombol-hapus:hover {
+    background: #962d22;
+}
+
+select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.kotak-info {
+    background: #fffbe6;
+    border: 1px solid #e6d58a;
+    padding: 10px;
+}
+
+.tersembunyi {
+    display: none;
+}
+
+code {
+    background: #eee;
+    padding: 1px 4px;
+    font-size: 13px;
+}

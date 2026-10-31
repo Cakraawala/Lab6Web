@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6 - JavaScript DOM dan Event Handling</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 0 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #1f5faa;
+            margin-bottom: 5px;
+        }
+        nav {
+            margin: 15px 0;
+            padding: 8px 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            color: #1f5faa;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .box-info {
+            background: #fdfdfd;
+            border: 1px solid #ddd;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .box-info h3 {
+            margin-top: 0;
+            color: #1f5faa;
+        }
+        table.biodata {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table.biodata td {
+            padding: 5px 8px;
+            vertical-align: top;
+        }
+        table.biodata td:first-child {
+            width: 180px;
+            font-weight: bold;
+        }
+        ul.menu-praktikum {
+            padding-left: 20px;
+        }
+        ul.menu-praktikum li {
+            margin-bottom: 10px;
+        }
+        ul.menu-praktikum a {
+            font-weight: bold;
+            color: #1f5faa;
+            text-decoration: none;
+        }
+        ul.menu-praktikum a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Praktikum 6: JavaScript DOM dan Event Handling</h1>
+        <p>Mata Kuliah: Pemrograman Web (Pertemuan 7)</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Halaman Utama</a> |
+        <a href="lab6_dom_event/index.html">Latihan Modul (1-6)</a> |
+        <a href="lab6_dom_event/workshop/index.html">Pendaftaran Workshop (Mini Project)</a> |
+        <a href="lab6_dom_event/eksperimen/index.html">Eksperimen Mandiri</a> |
+        <a href="README.md">Laporan README.md</a>
+    </nav>
+
+    <div class="box-info">
+        <h3>Identitas Mahasiswa</h3>
+        <table class="biodata">
+            <tr>
+                <td>Nama</td>
+                <td>: Angger Cakra Wicaksono</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>: 312510054</td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>: I253A</td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>: Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>Dosen Pengampu</td>
+                <td>: Agung Nugroho, S.Kom., M.Kom.</td>
+            </tr>
+            <tr>
+                <td>Perguruan Tinggi</td>
+                <td>: Universitas Pelita Bangsa</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box-info">
+        <h3>Daftar Halaman Praktikum</h3>
+        <p>Silakan pilih tautan halaman di bawah ini untuk melihat hasil implementasi:</p>
+        <ul class="menu-praktikum">
+            <li>
+                <a href="lab6_dom_event/index.html">1. Halaman Latihan Modul (Latihan 1 sampai 6)</a><br>
+                <span>Berisi mengubah teks dengan textContent, event click, classList toggle/add/remove, event input penghitung karakter, validasi form pendaftaran (nama, email, usia), dan to-do list sederhana.</span>
+            </li>
+            <li>
+                <a href="lab6_dom_event/workshop/index.html">2. Mini Project: Form Pendaftaran Workshop</a><br>
+                <span>Form pendaftaran dengan validasi nama, email, dan pilihan sesi, ringkasan input langsung, penghitung karakter catatan, pesan error/sukses, dan tombol hapus input.</span>
+            </li>
+            <li>
+                <a href="lab6_dom_event/eksperimen/index.html">3. Halaman Eksperimen Mandiri</a><br>
+                <span>Tugas Bagian G modul: tombol hapus item to-do list, validasi nama minimal 3 karakter, event change dropdown sesi, hide/show paragraf dengan class CSS, dan percobaan script tanpa defer di head.</span>
+            </li>
+            <li>
+                <a href="README.md">4. Dokumentasi Laporan Praktikum (README.md)</a><br>
+                <span>Dokumentasi berisi tujuan, struktur file, cara menjalankan, langkah kerja, screenshot, dan jawaban pertanyaan evaluasi.</span>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Praktikum Pemrograman Web - Universitas Pelita Bangsa</p>
+    </footer>
+
+</body>
+</html>
